@@ -5,6 +5,10 @@ export default class DefaultLightningDataTable extends LightningElement
 
     @track accnts;
     @track numbr_of_records;
+    @track lengthofrecords ;
+    @track selectedrecords = [];
+    
+    //@track selectedrecords;
     //@track datalst=[];
 
     @track clms = [ 
@@ -38,5 +42,11 @@ export default class DefaultLightningDataTable extends LightningElement
                                 console.log('Error is '+ error);
 
                              })             
+        }
+        handlrowSelection(event)
+        {
+             this.selectedrecords = event.detail.selectedRows;
+             console.log('Selected Records are '+ JSON.stringify(this.selectedrecords));
+            // this.lengthofrecords = this.selectedrecords.length;
         }
 }

@@ -42,12 +42,15 @@ Selecting of rows-->
 
 <template>
     <lightning-card title="Default Lightning Data Table" icon-name="standard:account">
+        <p><b>Number of selected Records : {selectedrecords.length}</b></p><br/>
         <lightning-datatable
                     data={accnts}
                     columns={clms}
                     key-field="Id"
                     show-row-number-column="true"
                     inline-editing="true"
+                    onrowselection={handlrowSelection}                  
+                    onrowaction={handleRowAction}
         ></lightning-datatable>
     </lightning-card>
 </template>
