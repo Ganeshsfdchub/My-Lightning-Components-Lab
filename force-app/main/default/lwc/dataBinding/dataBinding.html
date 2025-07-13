@@ -10,6 +10,7 @@ Twoway Databinding : Where information/data flows 2 directions controller to tem
 
 <template>
     <diV class="box">
+
           <lightning-card title="Oneway Data Binding" icon-name="standard:account">  
            <div class="slds-var-m-around_medium"> 
                   <p>{msg}</p>
@@ -20,9 +21,9 @@ Twoway Databinding : Where information/data flows 2 directions controller to tem
            <lightning-card title="Twoway Data Binding" icon-name="standard:account">
                   <div class="slds-var-m-around_medium">
             
-                  <lightning-input label="Enter Property" onchange={hndleproprty}></lightning-input><br/> 
+                    <lightning-input label="Enter Property" onchange={hndleproprty}></lightning-input><br/> 
                          <p>My Twoway Binding msg is : <b>{greetings}</b></p>
-             </div>
+                </div>
            </lightning-card>
    </diV>
    </template>
