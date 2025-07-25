@@ -1,0 +1,25 @@
+<template>
+    <div>
+      <lightning-card title="Account Record Create" icon-name="standard:aacount">
+         <lightning-input label="Account Name" value={accName}  onchange={nameval}></lightning-input>
+         <lightning-input label="Account Rating" value={accRating} onchange={Ratingval}></lightning-input>
+         <lightning-input label="Account Industry" value={accIndustry} onchange={Industryval}></lightning-input>
+         <lightning-input label="Account Phone" value={accPhone} onchange={phoneval}></lightning-input>
+         <lightning-input label="Account Fax" value={accFax} onchange={Faxval}></lightning-input>
+         <lightning-input label="Account Email" value={accEmail} onchange={Emailval}></lightning-input>
+         <lightning-input label=" Account Active" value={accActiveStatus} onchange={Activeval}></lightning-input>
+         <lightning-input label="BillingState" value={accBillingState}  onchange={Stateval}></lightning-input>
+         <lightning-input label="BillingCity" value={accBillingCity} onchange={Cityval}></lightning-input>
+         <lightning-input label="BillingCountry" value={accBillingCountry} onchange={Countryval}></lightning-input>
+         <lightning-input label="BillingStreet" value={accBillingStreet} onchange={Streetval}></lightning-input>
+         <lightning-input label="PostalCode" value={accPostalCode} onchange={Codeval}></lightning-input>
+         <lightning-input label="AnnualRevenue" value={accAnnualRevenue} onchange={Annualval}></lightning-input></br></br>
+        
+         <p align="center">
+         <lightning-button label="Insert"
+                           variant="brand"
+                           onclick={crt}></lightning-button>
+        </p>
+      </lightning-card>
+    </div>
+  </template>
