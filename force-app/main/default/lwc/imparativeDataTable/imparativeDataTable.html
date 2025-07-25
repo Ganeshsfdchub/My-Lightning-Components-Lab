@@ -1,0 +1,15 @@
+<template>
+    <div>
+        <lightning-card title="Account" icon-name="standard:account">
+                   
+            <lightning-button label="Show Records" variant="brand" onclick={handlefun}></lightning-button><br/><br/>
+            Number of Records-----<b>{numberofRecords}</b><br/><br/>
+
+            <lightning-datatable data={resultcollection}
+                                 columns={clm}
+                                 key-field="Id">
+            </lightning-datatable>
+   
+        </lightning-card>
+    </div>
+</template>
