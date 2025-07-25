@@ -1,0 +1,16 @@
+<template>
+  <div>
+  <lightning-card title="Account" icon-name="standard:account">
+
+    <lightning-input label="Enter Name" placeholder="Enter Name" onchange={handlename}></lightning-input><br/>
+    <lightning-button label="submit" variant="brand" onclick={handlesub}></lightning-button><br/>
+     <b>Total number of Account Records-----:{numberofRecords}</b><br/><br/>
+    <lightning-datatable  data={resultcollection}
+                          columns={clm}
+                          key-field="id">
+
+    </lightning-datatable>
+
+  </lightning-card> 
+ </div> 
+</template>
