@@ -1,0 +1,13 @@
+<template>
+    <lightning-card icon-name="standard:account">
+    
+    <div slot="title">
+     <h2><b><u>This is Parent Component</u></b></h2><br/>
+      <lightning-button label="Show Hooks" variant="brand" onclick={hanlhook}></lightning-button>
+    </div><br/>
+    
+      <template if:true={isvarible}>
+        <c-life-cycle-hooks-child></c-life-cycle-hooks-child>
+      </template>
+   </lightning-card>
+</template>
