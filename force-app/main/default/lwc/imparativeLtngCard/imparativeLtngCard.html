@@ -1,0 +1,22 @@
+<template>
+    <div>
+        <lightning-button label="Show Records" variant="brand" onclick={handlefun}></lightning-button><br/><br/>
+        Number of records-----:<b>{numberofRecords}</b><br/>
+        <template for:each={resultcollection} for:item="acc">
+        <lightning-card icon-name="standard:contact" key={acc.id}>
+            <div slot="title">
+            <h3>Account</h3>
+             <b>{acc.Name}</b>
+            </div><br/>
+                    
+            <p>Account name------------:{acc.Name}</p>
+            <p>Account Fax------------:{acc.Fax}</p>
+            <p>Account Phone------------:{acc.Phone}</p>
+            <p>Account Industry------------:{acc.Industry}</p>
+            <p>Account Active__c------------:{acc.Active__c}</p>
+            <p>Account AnnualRevenue------------:{acc.AnnualRevenue}</p>
+          
+        </lightning-card>
+    </template>
+    </div>
+</template>
