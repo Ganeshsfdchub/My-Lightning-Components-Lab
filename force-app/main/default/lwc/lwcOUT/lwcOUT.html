@@ -1,0 +1,49 @@
+Visualforce Page (VF_lwc)
+=========================
+
+<apex:page >
+    <apex:includeLightning />
+    <apex:pageBlock title="Displaying lwc Component">
+        <apex:pageBlockSection title="Create Record lds">
+            <div id="lwc"></div>
+        </apex:pageBlockSection>
+        
+        <apex:pageBlockSection title="Calculator">
+            <div id="lc"></div>
+        </apex:pageBlockSection>
+        
+    </apex:pageBlock>
+    
+    <script>
+    $Lightning.use("c:LA_LWC_OUT", 
+                   function()
+                   {
+                       $Lightning.createComponent("c:calculatorComponenet",
+                                                 {},
+                                                 "lwc",
+                                                 function(cmp)
+                                                 {
+                                                     alert('congrats your lwc cmp loading in VF page');  
+                                                 }
+                                                );  
+                   }
+                  );
+    </script>
+    
+    
+   <script> 
+   $Lightning.use("c:LA_LWC_OUT", 
+                   function()
+                   {
+                       $Lightning.createComponent("c:imparativeWithTable",
+                                                 {},
+                                                 "lc",
+                                                 function(cmp)
+                                                 {
+                                                     alert('congrats your lwc cmp loading in VF page');  
+                                                 }
+                                                );  
+                   }
+                  ); 
+    </script>
+</apex:page>
