@@ -1,0 +1,233 @@
+<template>
+    <b><u><h1 class="header">Address Formatting</h1></u></b>
+    <lightning-formatted-address
+        street="1 Market St."
+        city="San Francisco"
+        country="US"
+        province="CA"
+        postal-code="94105"
+        show-static-map
+        latitude="37.792179"
+        longitude="-122.392735">
+    </lightning-formatted-address><br/><br/>
+
+
+
+    <div>
+        <b><u><h1 class="header">Date Formatting</h1></u></b>
+        <p><lightning-formatted-date-time 
+            value="1547250828000">
+        </lightning-formatted-date-time></p>
+
+        <p><lightning-formatted-date-time 
+            value="1547250828000"
+             year="2-digit" 
+             month="short" 
+             day="2-digit" 
+             weekday="narrow">
+            </lightning-formatted-date-time></p>
+
+        <p><lightning-formatted-date-time 
+            value="1547250828000" 
+            year="2-digit" 
+            month="short" 
+            day="2-digit" 
+            weekday="long">
+        </lightning-formatted-date-time></p>
+    </div><br/><br/>
+
+
+
+
+
+    <div class="slds-box">
+        <b><u><h1 class="header">Date and Time Formatting</h1></u></b>
+        <p><lightning-formatted-date-time 
+            value="1547250828000" 
+            year="2-digit" 
+            month="short" 
+            day="2-digit" 
+            hour="numeric"
+            weekday="long" 
+            era="short">
+        </lightning-formatted-date-time></p>
+
+        <p><lightning-formatted-date-time 
+            value="1547250828000" 
+            year="numeric" 
+            month="numeric" 
+            day="numeric" 
+            hour="2-digit"
+            minute="2-digit" 
+            time-zone-name="short">
+        </lightning-formatted-date-time></p>
+
+        <p><lightning-formatted-date-time 
+            value="1547250828000" 
+            year="numeric" 
+            month="numeric" 
+            day="numeric" 
+            hour="2-digit"
+            minute="2-digit" 
+            time-zone="UTC" 
+            time-zone-name="short" 
+            hour12={ampm}>
+        </lightning-formatted-date-time></p>
+    </div><br/><br/>
+
+
+
+
+
+      <div>
+    <b><u><h1 class="header">Email Formatting</h1></u></b>
+     <p><lightning-formatted-email 
+        value="email@example.com" 
+        label="Email Us!/email@example.com" >
+    </lightning-formatted-email></p>
+      </div><br/><br/>
+
+
+
+
+     <div>
+        <b><u><h1 class="header">location Formatting</h1></u></b>
+        <p><lightning-formatted-location 
+             latitude="22"
+             longitude="122.2222">
+        </lightning-formatted-location></p>
+     </div><br/><br/>
+
+
+
+     <div class="slds-box">
+        <b><u><h1 class="header">Default name Formatting</h1></u></b>
+        <lightning-formatted-name
+                first-name="John"
+                last-name="Doe"
+                middle-name="Middleton"
+                informal-name="Jo"
+                suffix="The 3rd"
+                salutation="Mr." >
+        </lightning-formatted-name>
+    </div><br/><br/>
+
+
+    <div>
+        <b><u><h1 class="header">Number Formatting</h1></u></b>
+    <p><lightning-formatted-number value="1234.5678" maximum-fraction-digits="2"></lightning-formatted-number></p>
+    <p><lightning-formatted-number value="12.34" format-style="decimal" minimum-integer-digits="5"></lightning-formatted-number></p>
+    <p><lightning-formatted-number value="12.34" format-style="decimal" minimum-fraction-digits="5"></lightning-formatted-number></p>
+    <p><lightning-formatted-number value="12.34" format-style="decimal" minimum-significant-digits="5"></lightning-formatted-number></p>
+    <p><lightning-formatted-number value="123456789.123456789" minimum-fraction-digits="9"></lightning-formatted-number></p>
+    </div><br/><br/>
+
+
+    <div>
+        <b><u><h1 class="header">Phone Number Formatting</h1></u></b>
+      <p><lightning-formatted-phone value="+18005551212" ></lightning-formatted-phone></p>
+      <p><lightning-formatted-phone value="(800)5551212"></lightning-formatted-phone></p>
+      <p><lightning-formatted-phone value="1333333" ></lightning-formatted-phone></p>
+      <p><lightning-formatted-phone value="18005551212" disabled></lightning-formatted-phone></p>
+    </div><br/><br/>
+
+    <div>
+        <b><u><h1 class="header">rich text Formatting</h1></u></b>
+        <lightning-formatted-rich-text 
+        value="Plain boring text">
+       </lightning-formatted-rich-text>
+
+        <lightning-formatted-rich-text 
+        value="This &lt;em&gt;is&lt;/em&gt; some simple rich text. &lt;strong&gt;Hello!&lt;/strong&gt;">
+        </lightning-formatted-rich-text><br/>
+
+        <lightning-formatted-rich-text 
+        value="This is a link to &lt;a href=&quot;http://www.salesforce.com&quot;&gt;Salesforce&lt;/a&gt;">
+        </lightning-formatted-rich-text><br/><br/>
+        
+    </div><br/><br/>
+
+
+    <div>
+        <b><u><h1 class="header"> text Formatting</h1></u></b>
+        <p><lightning-formatted-text value="Email salesforce.com and info.salesforce.com" ></lightning-formatted-text></p>
+        <p><lightning-formatted-text value="Email info@salesforce.com" ></lightning-formatted-text></p>
+        <p><lightning-formatted-text value="Email salesforce.com and info.salesforce.com" linkify></lightning-formatted-text></p>
+        <p><lightning-formatted-text value="Email info@salesforce.com" linkify></lightning-formatted-text></p>
+    </div><br/><br/>
+
+
+    <div>
+        <b><u><h1 class="header"> time Formatting</h1></u></b>
+        <p>Simple Time value: <lightning-formatted-time value="22:12:30.999"></lightning-formatted-time></p>
+        <p>Time value with Z suffix: <lightning-formatted-time value="22:12:30.999Z"></lightning-formatted-time></p>
+    </div><br/><br/>
+
+
+    <div>
+        <b><u><h1 class="header"> Url Formatting</h1></u></b>
+        <p><lightning-formatted-url 
+            label="path link"
+            value="my/path" 
+            tooltip="Omit leading slash" 
+            target="_blank">
+        </lightning-formatted-url></p>
+
+        <p><lightning-formatted-url
+            label="lwc link" 
+            value="www.salesforce.com" 
+            tooltip="Use full domain name" 
+            target="_blank">
+        </lightning-formatted-url></p>
+
+        <p><lightning-formatted-url 
+            value="https://salesforce.com" 
+            tooltip="Use https://domain-name" 
+            label="Visit salesforce.com" 
+            target="_blank" ></lightning-formatted-url></p>
+    </div><br/><br/>
+
+
+  
+        <div>
+            <b><u><h1 class="header"> helptext Formatting</h1></u></b>
+            <lightning-helptext 
+            icon-name="utility:salesforce1" 
+            content="Full text explanation of feature"></lightning-helptext>
+        </div>
+    
+
+     <div>
+        <b><u><h1 class="header"> icon Formatting</h1></u></b>
+           <lightning-icon icon-name="action:approval" alternative-text="Approved" title="Approved"></lightning-icon>&nbsp;
+           <lightning-icon icon-name="action:delete" alternative-text="Delete" title="Delete"></lightning-icon>&nbsp;
+           <lightning-icon icon-name="action:new_note" alternative-text="New note" title="New note"></lightning-icon>&nbsp;
+           <lightning-icon icon-name="action:preview" alternative-text="Preview" title="Preview"></lightning-icon><br/><br/>
+           
+            
+          <lightning-icon icon-name="doctype:audio" alternative-text="Audio file" title="Audio"></lightning-icon>&nbsp;
+          <lightning-icon icon-name="doctype:image" alternative-text="Image file" title="Image"></lightning-icon>&nbsp;
+          <lightning-icon icon-name="doctype:mp4" alternative-text="MP4 file" title="MP4"></lightning-icon>&nbsp;
+          <lightning-icon icon-name="doctype:xml" alternative-text="XML file" title="XML"></lightning-icon><br/><br/>
+           
+          <lightning-icon icon-name="standard:event" alternative-text="Event" title="Event"></lightning-icon>&nbsp;
+          <lightning-icon icon-name="standard:account" alternative-text="Account" title="Account"></lightning-icon>&nbsp;
+          <lightning-icon icon-name="standard:address" alternative-text="Address" title="Address"></lightning-icon>&nbsp;
+          <lightning-icon icon-name="standard:email" alternative-text="Email" title="Email"></lightning-icon><br/><br/>
+           
+           
+          <lightning-icon icon-name="utility:connected_apps" alternative-text="Connected" title="Connected">
+          </lightning-icon>
+          <lightning-icon icon-name="utility:warning" alternative-text="Warning!" title="Warning"></lightning-icon>&nbsp;
+          <lightning-icon icon-name="utility:error" alternative-text="Error!" title="Error"></lightning-icon>&nbsp;
+          <lightning-icon icon-name="utility:image" alternative-text="Utility image" title="Image"></lightning-icon><br/><br/>
+            
+        
+            
+          <lightning-icon icon-name="custom:custom11" title="custom11"></lightning-icon>
+          <lightning-icon icon-name="custom:custom33" title="custom33"></lightning-icon>
+          <lightning-icon icon-name="custom:custom51" title="custom51"></lightning-icon>
+          <lightning-icon icon-name="custom:custom88" title="custom88"></lightning-icon>       
+        </div>
+        
+</template>

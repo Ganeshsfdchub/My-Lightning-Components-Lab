@@ -1,0 +1,11 @@
+<template>
+    <div>
+        <lightning-card title="Button IconStatefull Component" icon-name="standard:account">           
+           
+         <lightning-button-icon-stateful icon-name="utility:like"  alternative-text="Like" selected={likeState} onclick={handleLikeButtonClick} ></lightning-button-icon-stateful>
+         <lightning-button-icon-stateful icon-name="utility:answer" alternative-text="Answer" selected={answerState} onclick={handleAnswerButtonClick} ></lightning-button-icon-stateful>
+         <lightning-button-icon-stateful icon-name="utility:like" alternative-text="Like" disabled selected={likeStateDisabled} onclick={handleLikeButtonDisabledClick} ></lightning-button-icon-stateful>
+         <lightning-button-icon-stateful icon-name="utility:answer" alternative-text="Answer" disabled selected={answerStateDisabled} onclick={handleAnswerButtonDisabledClick} ></lightning-button-icon-stateful>
+        </lightning-card>
+    </div>
+</template>

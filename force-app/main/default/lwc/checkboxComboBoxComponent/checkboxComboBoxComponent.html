@@ -1,0 +1,11 @@
+<template>
+    <lightning-combobox 
+    label = "Select The Country Names" 
+    placeholder = "Pls Enter Country Names"
+    options = {countrynames}
+    values = {selectedcountrynames}
+    onchange={handlechange}
+    ></lightning-combobox><br/>
+
+    selected values : {selectedcountrynames}
+</template>

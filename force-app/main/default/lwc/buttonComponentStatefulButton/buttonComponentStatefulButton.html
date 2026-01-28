@@ -1,0 +1,86 @@
+<template>
+    <div>
+        <lightning-card>
+     
+ <lightning-button-stateful
+                             label-when-off="Follow"
+                             label-when-on="Following"
+                             label-when-hover="Unfollow"
+                             icon-name-when-off="utility:add"
+                             icon-name-when-on="utility:check"
+                             icon-name-when-hover="utility:close"
+                             variant="brand"
+                             selected={isSelected1}
+                             onclick={handleClick1}></lightning-button-stateful>&nbsp;
+
+ <lightning-button-stateful
+                             label-when-off="contact"
+                             label-when-on="Following contact"
+                             label-when-hover="Unfollow contact"
+                             icon-name-when-off="utility:add"
+                             icon-name-when-on="utility:check"
+                             icon-name-when-hover="utility:close"
+                             selected={isSelected2}
+                             onclick={handleClick2}></lightning-button-stateful>&nbsp;
+
+ 
+     <lightning-button-stateful
+                             label-when-off="Delete"
+                             label-when-on=" Deleted"
+                             label-when-hover="Unfollow Delete"
+                             icon-name-when-off="utility:delete"
+                             icon-name-when-on="utility:undelete"
+                             icon-name-when-hover="utility:close"
+                             variant="destructive"
+                             selected={isSelected3}
+                             onclick={handleClick3}></lightning-button-stateful>&nbsp;
+
+                            
+ <lightning-button-stateful 
+                             label-when-off="Case"
+                             label-when-on="Following Case"
+                             label-when-hover="Unfollow Case"
+                             icon-name-when-off="utility:add"
+                             icon-name-when-on="utility:check"
+                             icon-name-when-hover="utility:close"
+                             variant="brand-outline"
+                             selected={isSelected4}
+                             onclick={handleClick4}></lightning-button-stateful>&nbsp;
+
+ <lightning-button-stateful 
+                             label-when-off="oppertunity"
+                             label-when-on="Following oppertunity"
+                             label-when-hover="Unfollow oppertunity"
+                             icon-name-when-off="utility:add"
+                             icon-name-when-on="utility:check"
+                             icon-name-when-hover="utility:close"
+                             variant="brand-outline"
+                             selected={isSelected5}
+                             onclick={handleClick5}></lightning-button-stateful>&nbsp;
+
+
+ <lightning-button-stateful 
+                             label-when-off="Succes"
+                             label-when-on=" Succeed"
+                             label-when-hover="Unfollow Succes"
+                             icon-name-when-off="utility:add"
+                             icon-name-when-on="action:approval"
+                             icon-name-when-hover="utility:close"                      
+                             variant="success"
+                             selected={isSelected6}
+                             onclick={handleClick6}></lightning-button-stateful>&nbsp;
+
+  <lightning-button-stateful 
+                             label-when-off="Click on button"
+                             label-when-on="Clicked"
+                             label-when-hover="Unfollow "
+                             icon-name-when-off="utility:add"
+                             icon-name-when-on="utility:check"
+                             icon-name-when-hover="utility:close"  
+                             variant="ineverse"
+                             selected={isSelected7}
+                             onclick={handleClick7}></lightning-button-stateful>&nbsp;
+                                         
+        </lightning-card>
+    </div>
+</template>

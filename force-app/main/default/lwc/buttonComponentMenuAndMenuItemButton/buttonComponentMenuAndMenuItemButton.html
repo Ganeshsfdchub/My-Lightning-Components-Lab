@@ -1,0 +1,28 @@
+<template>
+    <div>
+        <lightning-button label="Follow" variant="brand-outline" title="Follow New " icon-name="utility:add" icon-position="left" name="btfollow" ></lightning-button>&nbsp;&nbsp;
+        <lightning-button-group>
+            <lightning-button label="New Contact" variant="brand-outline" title="Create New Contact"></lightning-button> 
+            <lightning-button label="New Case" variant="brand-outline" title="Create New Case"></lightning-button>
+            <lightning-button label="New Note" variant="brand-outline" title="Create New Note"></lightning-button> 
+            
+            <lightning-button-menu alternative-text="Select The Required Option" title="Menu" menu-alignment="auto">
+                  <lightning-menu-item label="New opportunity" value="oppty"></lightning-menu-item>
+                  <lightning-menu-item label="Check for NewData " value="nwdt"></lightning-menu-item>
+                  <lightning-menu-item label="submit for approval" value="sbapvl"></lightning-menu-item>
+                  <lightning-menu-item label="Edit" value="edt"></lightning-menu-item>
+                  <lightning-menu-item label="Delete" value="dt"></lightning-menu-item>
+                  <lightning-menu-item label="Sharing" value="shr"></lightning-menu-item>
+                  <lightning-menu-item label="View Webside" value="vs"></lightning-menu-item>
+                  <lightning-menu-item label="Change Owner" value="cn"></lightning-menu-item>
+
+                  <lightning-menu-subHeader label="Insert oprtartions"></lightning-menu-subHeader>
+                  
+                  <lightning-menu-item label="Insert" value="is"></lightning-menu-item>
+                  <lightning-menu-item label="Update" value="up"></lightning-menu-item>
+                  <lightning-menu-item label="delete" value="dlt"></lightning-menu-item>
+            </lightning-button-menu>
+
+        </lightning-button-group>
+    </div>
+</template>
