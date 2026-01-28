@@ -1,0 +1,11 @@
+<template>
+    <lightning-card title="Publish Component" icon-name="standard:account">
+        <lightning-input label="Enter Label" type="text" onchange={handleinput}></lightning-input></br>
+        <div align="center">
+        <lightning-button label="Publish" variant="brand" onclick={hndlpublish}></lightning-button>
+        </div></br></br>
+        
+        <lightning-button label="Subscribe" variant="brand" onclick={hndlsub}></lightning-button></br></br>
+         <p>Received Message From Subscriber : <b>{newreceivedmsg}</b></p>
+    </lightning-card>
+</template>
