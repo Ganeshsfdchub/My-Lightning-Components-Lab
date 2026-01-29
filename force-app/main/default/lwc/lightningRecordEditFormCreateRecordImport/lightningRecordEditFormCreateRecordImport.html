@@ -1,0 +1,36 @@
+<template>
+    <lightning-card title="Account Import" icon-name="standard:account">
+
+        <lightning-record-edit-form object-api-name={objectApiName}                       
+                                    onsuccess={createhndle}>
+
+      <table>
+        <tr>
+           <td><lightning-input-field field-name={Name}></lightning-input-field></td>
+           <td><lightning-input-field field-name={Rating}></lightning-input-field></td>
+        </tr>
+
+        <tr>
+            <td><lightning-input-field field-name={Phone}></lightning-input-field></td>
+            <td><lightning-input-field field-name={Fax}></lightning-input-field></td>
+         </tr>
+
+         <tr>
+            <td><lightning-input-field field-name={Industry}></lightning-input-field></td>
+            <td><lightning-input-field field-name={AnnualRevenue}></lightning-input-field></td>
+         </tr>
+
+         <tr>
+            <td><lightning-input-field field-name={Website}></lightning-input-field></td>
+            <td><lightning-input-field field-name={Active__c}></lightning-input-field></td>
+         </tr>    
+    </table><br/>
+             <p align="center">
+                  <lightning-button label="Submit"
+                                    variant="brand"
+                                    type="submit"></lightning-button>
+             </p>
+
+        </lightning-record-edit-form>
+  </lightning-card>        
+</template>

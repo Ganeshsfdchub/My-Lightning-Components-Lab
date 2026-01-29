@@ -1,0 +1,18 @@
+<template>
+    <div>
+    <lightning-card title="Account Record Update WithId Needed fields " icon-name="standard:account">
+
+      <lightning-record-form
+      
+                           record-id={recordId}
+                           object-api-name={objectApiName}
+                           fields={fields}
+                           layout-type="full"
+                           columns="2"
+                           mode="edit"
+                           onsuccess={hndonsus}></lightning-record-form>
+
+    </lightning-card>
+
+    </div>
+</template>

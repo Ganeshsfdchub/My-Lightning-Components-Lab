@@ -1,0 +1,85 @@
+<template>
+    <div>
+        <lightning-card  icon-name="standard:account">
+
+            <div slot="title">
+                Account</br>
+                <h1><b>Burlington Textiles Crop of America</b></h1>
+            </div>
+            
+
+            <div slot="actions">
+                <lightning-button label="Follow" variant="brand-outline" title="Follow New " icon-name="utility:add" icon-position="left" name="btfollow" ></lightning-button>&nbsp;&nbsp;
+                <lightning-button-group>
+                    <lightning-button label="New Contact" variant="brand-outline" title="Create New Contact"></lightning-button> 
+                    <lightning-button label="New Case" variant="brand-outline" title="Create New Case"></lightning-button>
+                    <lightning-button label="New Note" variant="brand-outline" title="Create New Note"></lightning-button> 
+                    
+                    <lightning-button-menu alternative-text="Select The Required Option" title="Menu" menu-alignment="auto">
+                          <lightning-menu-item label="New opportunity" value="oppty"></lightning-menu-item>
+                          <lightning-menu-item label="Check for NewData " value="nwdt"></lightning-menu-item>
+                          <lightning-menu-item label="submit for approval" value="sbapvl"></lightning-menu-item>
+                          <lightning-menu-item label="Edit" value="edt"></lightning-menu-item>
+                          <lightning-menu-item label="Delete" value="dt"></lightning-menu-item>
+                          <lightning-menu-item label="Sharing" value="shr"></lightning-menu-item>
+                          <lightning-menu-item label="View Webside" value="vs"></lightning-menu-item>
+                          <lightning-menu-item label="Change Owner" value="cn"></lightning-menu-item>
+        
+                          <lightning-menu-subHeader label="Insert oprtartions"></lightning-menu-subHeader>
+                          
+                          <lightning-menu-item label="Insert" value="is"></lightning-menu-item>
+                          <lightning-menu-item label="Update" value="up"></lightning-menu-item>
+                          <lightning-menu-item label="delete" value="dlt"></lightning-menu-item>
+                    </lightning-button-menu>
+        
+                </lightning-button-group>
+            </div>
+
+            <div slot="footer">
+               <lightning-badge label="New customer" ></lightning-badge>
+               <lightning-badge label="Get updates" ></lightning-badge>
+               <lightning-badge label="Send News letters" ></lightning-badge>
+            </div></br>
+
+            <div>
+                <table>
+                    <tr>
+                        <th>Rating</th>
+                        <th>Industry Name</th>
+                        <th>Annual income</th>
+                        <th>Customer Type</th>
+                        <th>ownership</th>
+                        <th>Contact Number</th>
+                        <th>Fax Number</th>
+                        <th>Customer priority</th>
+                        <th>Active Status </th>
+                    </tr>
+
+                    <tr>
+                        <td>warm</td>
+                        <td>Manufaturing</td>
+                        <td>$250000</td>
+                        <td>Inatallation Partner</td>
+                        <td>Public</td>
+                        <td>+91-9959308808</td>
+                        <td>+99-88-34</td>
+                        <td>High</td>
+                        <td>Yes</td>
+                    </tr>
+
+                    <tr>
+                        <td>cool</td>
+                        <td>Manufaturing</td>
+                        <td>$200000</td>
+                        <td>Inatallation Partner</td>
+                        <td>Private</td>
+                        <td>+91-9550700321</td>
+                        <td>+86-88-34</td>
+                        <td>medium</td>
+                        <td>Yes</td>
+                    </tr>
+                </table>
+            </div>
+        </lightning-card>
+    </div>
+</template>

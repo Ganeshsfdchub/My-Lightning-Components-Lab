@@ -1,0 +1,113 @@
+<template>
+    <div>
+       <lightning-card title="Input Controls" icon-name="standard:account">
+
+        <lightning-input label="Enter First Name" 
+                         type="text"
+                         placeholder="Enter First Name"
+                         name="fname"
+                         required="false"                 
+         ></lightning-input>
+
+        <lightning-input label="Enter Second Name" 
+                         type="text"
+                         placeholder="Enter Second Name"
+                         name="sname"
+                         required="false"                 
+       ></lightning-input>
+
+        <lightning-input label="Enter Age" 
+                         type="Number"
+                         placeholder="Enter Age"
+                         name="aname"
+                         required="false"                 
+         ></lightning-input>
+
+        <lightning-input label="Current Employer" 
+                         type="text"
+                         placeholder="Current Company"
+                         max-length="50"
+                         required="false"                 
+         ></lightning-input>
+
+       <lightning-input label="Current Designation" 
+                         type="text"
+                         placeholder="Designation"
+                         max-length="50"
+                         required="false"                 
+         ></lightning-input>
+
+        <lightning-input label="Contact Number" 
+                         type="phone"
+                         placeholder="99-89-455-098"
+                         pattern="[0-9]{2}-[0-9]{2}-[0-9]{3}-[0-9]{3}"
+                         required="false"                 
+         ></lightning-input>
+
+        <lightning-input label="Enter Email Address" 
+                         type="email"
+                         placeholder="Enter Email Address"
+                         max-length="50"
+                         required="false"                 
+         ></lightning-input>
+
+        <lightning-input label="Enter Current CTC" 
+                         type="currency"
+                         placeholder="current salary"
+                         max="5000000"
+                         required="false"                 
+         ></lightning-input>
+
+        <lightning-input label="Enter User Id" 
+                         type="text"
+                         placeholder="User Id"
+                         max-length="8"
+                         required="false"                 
+         ></lightning-input>
+
+       <lightning-input label="Enter Password" 
+                         type="password"
+                         placeholder="Enter Password"
+                         min-length="8"
+                         required="false"                 
+         ></lightning-input>
+
+        <lightning-input label="Confirm Your Password" 
+                         type="password"
+                         placeholder="Confirm Password"
+                         min-length="8"
+                         required="false"                 
+        ></lightning-input>
+
+        <lightning-input label="Enter your Date of Birth " 
+                         type="date"
+                         placeholder="Date of Birth"
+                         required="false"                 
+        ></lightning-input>
+
+        <lightning-input label="Join our News Letter" 
+                         type="checkbox"
+                         checked="true"                                
+        ></lightning-input>
+
+        <lightning-input label="Select Profile" 
+                         accept=".doc,.pdf,.docx"
+                         type="file"                                                 
+        ></lightning-input>
+
+        <lightning-input label="Select The Color to Apply" 
+                         type="color"                                                 
+        ></lightning-input>
+
+        <lightning-input label="Select services" 
+                         type="toggle"                                                 
+        ></lightning-input>
+
+         <lightning-combobox label="Select Country"
+                             placeholder="select country"
+                             options={countrynames}
+                             value={selectedcountrynames}></lightning-combobox>
+
+       </lightning-card>
+    </div>
+</template>
