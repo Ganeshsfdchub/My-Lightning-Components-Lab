@@ -23,15 +23,15 @@ export default class ImparativeWithParameterDataTable extends LightningElement
  handlesub()
  {
       (imparativemethod)({sechstring:this.propty})
-      .then(result=>{
-                      this.resultcollection = result;
-                      this.numberofRecords= result.length;
+      .then(myresult=>{
+                      this.resultcollection = myresult;
+                      this.numberofRecords= myresult.length;
 
 
                  })
-      .catch(error=>{
-                      console.log('Error Occured'+error);
-                      this.resultcollection = error;
+      .catch(myerror=>{
+                      console.log('Error Occured'+myerror);
+                      this.resultcollection = myerror;
                     })
  }
    
