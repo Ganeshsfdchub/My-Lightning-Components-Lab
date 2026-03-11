@@ -1,22 +1,24 @@
 <template>
     <diV>
-     <lightning-card title="Tack Decorator" icon-name="standard:account">
+     <lightning-card title="Track Decarator Component" icon-name="standard:account">
+         <lightning-input label="Show Custom Message"
+                          type="text"
+                          placeholder="Enter custom message"
+                          name="fname"
+                          value={showcustommsg}
+                          onchange={handlecustommsg}></lightning-input>
 
-       <lightning-input label="show Custom message" 
-                        placeholder="show Custom message"
-                        name="sname"
-                        value={showcustommessage}
-                        onchange={trackfun}></lightning-input></br>
-                        
-       <lightning-input label="show Customer Details" 
-                        placeholder="show Customer Details"
-                        name="cname"
-                        value={showcustomerdetails}
-                        onchange={trackfun}></lightning-input></br></br></br>
+         <lightning-input label="Show Customer Details"
+                          type="text"
+                          placeholder="Show Customer Details"
+                          name="sname"
+                          value={showcustomerdetails}
+                          onchange={handlecustomerdetails}>
+         </lightning-input><br/><br/>
 
-            Show custom message..........:<b>{showcustommessage}</b> </br>
-            show Customer Details........:<b>{showcustomerdetails}</b>
 
+            Show custom message..........:<b>{customermsgproprty}</b> </br>
+            show Customer Details........:<b>{customerdetailsproprty}</b>
 
      </lightning-card>
     </diV>
